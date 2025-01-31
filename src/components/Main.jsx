@@ -3,8 +3,10 @@ import ProductList from "./ProductList";
 import User from "./User";
 import Card from "./Card";
 import Cart from "./Cart";
-
+import Weather from "./Weather";
+import UserStatus from "./UserStatus";
 import Password from "./Password";
+import Greeting from "./Greeting";
 const Main = () => {
   return (
     <main>
@@ -21,6 +23,12 @@ const Main = () => {
         <Card></Card>
         <Password isValid={false}></Password>
         <Cart />
+        <Weather />
+        <UserStatus
+          loggedIn={true}
+          isAdmin={true}
+        />
+        <Greeting timeOfDay="afternoon" />
       </p>
     </main>
   );
