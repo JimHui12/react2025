@@ -1,6 +1,10 @@
 import UserList from "./UserList";
 import ProductList from "./ProductList";
 import User from "./User";
+import Card from "./Card";
+import Cart from "./Cart";
+
+import Password from "./Password";
 const Main = () => {
   return (
     <main>
@@ -14,6 +18,9 @@ const Main = () => {
           isMarried={false}
           hobbies={["Coding", "Readings", "Sleeping"]}
         />
+        <Card></Card>
+        <Password isValid={false}></Password>
+        <Cart />
       </p>
     </main>
   );
