@@ -3,8 +3,8 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 /*
-* 1:50:45
-*/
+ * 2:07:12
+ */
 const App = () => {
   return (
     <div>
