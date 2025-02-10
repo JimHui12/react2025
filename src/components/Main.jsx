@@ -7,6 +7,7 @@ import Weather from "./Weather";
 import UserStatus from "./UserStatus";
 import Password from "./Password";
 import Greeting from "./Greeting";
+import Movie from "./Movie";
 const Main = () => {
   return (
     <main>
@@ -29,6 +30,7 @@ const Main = () => {
           isAdmin={true}
         />
         <Greeting timeOfDay="afternoon" />
+        <Movie />
       </p>
     </main>
   );
