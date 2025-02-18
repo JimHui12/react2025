@@ -8,8 +8,12 @@ import UserStatus from "./UserStatus";
 import Password from "./Password";
 import Greeting from "./Greeting";
 import Movie from "./Movie";
+import ComponentOne from "./ComponentOne";
+import ComponentTwo from "./ComponentTwo";
+import ExampleOne from "./ExampleOne";
+import ExampleTwo from "./ExampleTwo";
 import { useCounterStore } from "../store/test";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const logCount = () => {
   const count = useCounterStore.getState().count;
@@ -17,6 +21,8 @@ const logCount = () => {
 };
 
 const Main = () => {
+  const [count, setCount] = useState(0);
+
   useEffect(() => {
     logCount();
   }, []);
@@ -43,6 +49,16 @@ const Main = () => {
         />
         <Greeting timeOfDay="afternoon" />
         <Movie />
+        <ComponentOne
+          count={count}
+          onClickHandler={() => setCount(count + 1)}
+        />
+        <ComponentTwo
+          count={count}
+          onClickHandler={() => setCount(count + 1)}
+        />
+        <ExampleOne />
+        <ExampleTwo />
       </p>
     </main>
   );
