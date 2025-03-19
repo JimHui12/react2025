@@ -10,8 +10,26 @@ import Greeting from "./Greeting";
 import Counter from "./Counter";
 import ToDoList from "./ToDoList";
 import Profile from "./Profile";
+import Movie from "./Movie";
+import ComponentOne from "./ComponentOne";
+import ComponentTwo from "./ComponentTwo";
+import ExampleOne from "./ExampleOne";
+import ExampleTwo from "./ExampleTwo";
+import { useCounterStore } from "../store/test";
+import { useEffect, useState } from "react";
+
+const logCount = () => {
+  const count = useCounterStore.getState().count;
+  console.log("count", count);
+};
 
 const Main = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    logCount();
+  }, []);
+
   return (
     <main>
       <h2>Main Content</h2>
@@ -36,6 +54,17 @@ const Main = () => {
         <Counter />
         <ToDoList />
         <Profile />
+        <Movie />
+        <ComponentOne
+          count={count}
+          onClickHandler={() => setCount(count + 1)}
+        />
+        <ComponentTwo
+          count={count}
+          onClickHandler={() => setCount(count + 1)}
+        />
+        <ExampleOne />
+        <ExampleTwo />
       </p>
     </main>
   );
