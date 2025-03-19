@@ -7,6 +7,10 @@ import Weather from "./Weather";
 import UserStatus from "./UserStatus";
 import Password from "./Password";
 import Greeting from "./Greeting";
+import Counter from "./Counter";
+import ToDoList from "./ToDoList";
+import Profile from "./Profile";
+
 const Main = () => {
   return (
     <main>
@@ -29,6 +33,9 @@ const Main = () => {
           isAdmin={true}
         />
         <Greeting timeOfDay="afternoon" />
+        <Counter />
+        <ToDoList />
+        <Profile />
       </p>
     </main>
   );

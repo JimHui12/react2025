@@ -15,9 +15,9 @@ const Cart = () => {
           <li key={Math.random()}>{item}</li>
         ))}
       </ul>
-      <p onMouseOver={moveHandler}>
+      {/* <p onMouseOver={moveHandler}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime laudantium eius officia nostrum error molestias neque sequi obcaecati inventore asperiores, necessitatibus fugit, quos dolor voluptate ipsa nobis, qui voluptates. Sunt?
-      </p>
+      </p> */}
     </div>
   );
 };
