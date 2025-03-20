@@ -3,7 +3,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 /*
-* 2:29:29
+* 2:41:35
 */
 const App = () => {
   return (

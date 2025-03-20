@@ -15,6 +15,8 @@ import ComponentOne from "./ComponentOne";
 import ComponentTwo from "./ComponentTwo";
 import ExampleOne from "./ExampleOne";
 import ExampleTwo from "./ExampleTwo";
+import ShoppingList from "./ShoppingList";
+import CopyInput from "./CopyInput";
 import { useCounterStore } from "../store/test";
 import { useEffect, useState } from "react";
 
@@ -33,7 +35,7 @@ const Main = () => {
   return (
     <main>
       <h2>Main Content</h2>
-      <p>
+      
         <UserList />
         <ProductList />
         <User
@@ -65,7 +67,9 @@ const Main = () => {
         />
         <ExampleOne />
         <ExampleTwo />
-      </p>
+        <ShoppingList />
+       
+        <CopyInput/>
     </main>
   );
 };

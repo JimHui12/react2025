@@ -28,8 +28,8 @@ const Profile = () => {
             </label>
         </div>
         <h3>Profile Information</h3>
-        <p>Name: {profile.name}</p>
-        <p>Age: {profile.age}</p>
+        <div>Name: {profile.name}</div>
+        <div>Age: {profile.age}</div>
     </div>
   )
 }

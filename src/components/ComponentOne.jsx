@@ -2,7 +2,7 @@ const ComponentOne = ({ count, onClickHandler }) => {
   const handleClick = () => onClickHandler();
   return (
     <div>
-      <p>{count}</p>
+      <div>{count}</div>
       <button onClick={handleClick}>Increment</button>
     </div>
   );
