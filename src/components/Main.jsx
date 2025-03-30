@@ -17,6 +17,8 @@ import ExampleOne from "./ExampleOne";
 import ExampleTwo from "./ExampleTwo";
 import ShoppingList from "./ShoppingList";
 import CopyInput from "./CopyInput";
+import Switcher from "./Switcher";
+import UseEffectHook from "./UseEffectHook";
 import { useCounterStore } from "../store/test";
 import { useEffect, useState } from "react";
 
@@ -70,6 +72,8 @@ const Main = () => {
         <ShoppingList />
        
         <CopyInput/>
+        <Switcher />
+        <UseEffectHook />
     </main>
   );
 };

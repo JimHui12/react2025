@@ -7,7 +7,7 @@ const CopyInput = () => {
     const handleCopy = () => {
         navigator.clipboard.writeText(inputValue).then(() => {
             setCopied(true)
-            setTimeout(()=> setCopied(false), 2000)
+            setTimeout(()=> setCopied(false), 5000)
             console.log(11)
         })
         console.log(1122)
