@@ -19,6 +19,9 @@ import ShoppingList from "./ShoppingList";
 import CopyInput from "./CopyInput";
 import Switcher from "./Switcher";
 import UseEffectHook from "./UseEffectHook";
+import BasicEffect from "./BasicEffect";
+import CounterEffect from "./CounterEffect";
+import FetchDataEffect from "./FetchDataEffect";
 import { useCounterStore } from "../store/test";
 import { useEffect, useState } from "react";
 
@@ -37,43 +40,46 @@ const Main = () => {
   return (
     <main>
       <h2>Main Content</h2>
-      
-        <UserList />
-        <ProductList />
-        <User
-          name="lala"
-          age={22}
-          isMarried={false}
-          hobbies={["Coding", "Readings", "Sleeping"]}
-        />
-        <Card></Card>
-        <Password isValid={false}></Password>
-        <Cart />
-        <Weather />
-        <UserStatus
-          loggedIn={true}
-          isAdmin={true}
-        />
-        <Greeting timeOfDay="afternoon" />
-        <Counter />
-        <ToDoList />
-        <Profile />
-        <Movie />
-        <ComponentOne
-          count={count}
-          onClickHandler={() => setCount(count + 1)}
-        />
-        <ComponentTwo
-          count={count}
-          onClickHandler={() => setCount(count + 1)}
-        />
-        <ExampleOne />
-        <ExampleTwo />
-        <ShoppingList />
-       
-        <CopyInput/>
-        <Switcher />
-        <UseEffectHook />
+
+      <UserList />
+      <ProductList />
+      <User
+        name="lala"
+        age={22}
+        isMarried={false}
+        hobbies={["Coding", "Readings", "Sleeping"]}
+      />
+      <Card></Card>
+      <Password isValid={false}></Password>
+      <Cart />
+      <Weather />
+      <UserStatus
+        loggedIn={true}
+        isAdmin={true}
+      />
+      <Greeting timeOfDay="afternoon" />
+      <Counter />
+      <ToDoList />
+      <Profile />
+      <Movie />
+      <ComponentOne
+        count={count}
+        onClickHandler={() => setCount(count + 1)}
+      />
+      <ComponentTwo
+        count={count}
+        onClickHandler={() => setCount(count + 1)}
+      />
+      <ExampleOne />
+      <ExampleTwo />
+      <ShoppingList />
+
+      <CopyInput />
+      <Switcher />
+      <UseEffectHook />
+      <BasicEffect />
+      <CounterEffect />
+      <FetchDataEffect />
     </main>
   );
 };
